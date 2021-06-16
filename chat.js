@@ -5,7 +5,7 @@ var socket = require('socket.io-client')('http://10.0.0.64:3000');
       socket.emit('disconnect')
   });
   socket.on('connect', () => {
-      console.log(chalk.red('=== start chatting ==='))
+      console.log(chalk.red('=== start chat ==='))
   })
   socket.on('message', (data) => {
         
